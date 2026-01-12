@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AURA - Business Case: obiettivi, vantaggi e risk management del progetto di farmacovigilanza AI.">
+    <title>Business Case - AURA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/logo-aura.png" alt="AURA Logo" class="logo-img">
+                AURA</a>
+            <button class="navbar-toggle" id="navbarToggle"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="analisi-settore.html" class="navbar-link">Analisi Settore</a>
+                <a href="farmacovigilanza.html" class="navbar-link">Farmacovigilanza</a>
+                <a href="pestle.html" class="navbar-link">PESTLE</a>
+                <a href="swot.html" class="navbar-link">SWOT</a>
+                <a href="personas.html" class="navbar-link">Buyer Personas</a>
+                <a href="business-case.html" class="navbar-link active">Business Case</a>
+                <a href="sitografia.html" class="navbar-link">Sitografia</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Business <span class="text-gradient">Case</span></h1>
+            <p>L'idea di partenza, gli obiettivi strategici e il valore di AURA.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>L'Idea di Partenza</h2>
+            </div>
+            <div class="card"
+                style="max-width: 900px; margin: 0 auto; padding: 2.5rem; border-left: 4px solid var(--color-primary);">
+                <h3 style="margin-bottom: 1rem;">🎯 Obiettivo</h3>
+                <p style="font-size: 1.125rem; color: var(--color-gray-700);">
+                    Lavorare sul processo di <strong>Farmacovigilanza</strong> creando un bot (AURA) che offre al
+                    cliente
+                    immediato confronto tramite una banca dati aggiornata da AIFA, dati aziende e articoli scientifici
+                    del settore.
+                </p>
+                <div
+                    style="background: var(--color-gray-50); padding: 1.5rem; border-radius: var(--radius-lg); margin-top: 1.5rem;">
+                    <h4 style="margin-bottom: 0.75rem;">Come Funziona</h4>
+                    <p style="margin: 0; font-size: 0.95rem;">
+                        Il cliente, tramite <strong>link QR code</strong> in farmacia, può esporre il suo problema e il
+                        suo
+                        "evento avverso collegato al farmaco". La nostra AI non solo offre un <strong>sostegno
+                            istantaneo</strong>
+                        (non diagnosi) collegato ai dati, ma comunica con AIFA per rendere migliore il processo di
+                        miglioramento dei farmaci tramite le segnalazioni.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vantaggi per gli Stakeholder</h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h4 class="card-title">Per le Aziende Pharma</h4>
+                    <ul style="color: var(--color-gray-600); line-height: 2;">
+                        <li>✓ Database aggiornato in tempo reale da tutti i clienti</li>
+                        <li>✓ Riduzione costi di follow-up su segnalazioni incomplete</li>
+                        <li>✓ Early warning system per safety signals</li>
+                        <li>✓ Compliance automatizzata con standard E2B R3</li>
+                        <li>✓ Brand positioning come "trasparente e scientifico"</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon accent">👥</div>
+                    <h4 class="card-title">Per i Clienti/Pazienti</h4>
+                    <ul style="color: var(--color-gray-600); line-height: 2;">
+                        <li>✓ Supporto istantaneo h24, 7 giorni su 7</li>
+                        <li>✓ Foglietto illustrativo virtuale e interattivo</li>
+                        <li>✓ Aiuto a descrivere correttamente i sintomi</li>
+                        <li>✓ Indicazione precisa di farmaco, dose, durata</li>
+                        <li>✓ Dati scientifici affidabili, non fake news</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🛡️ Risk Management & Compliance</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h4 style="color: var(--color-error);">❌ Il Rischio "Dr. Google"</h4>
+                    <p class="card-text"><strong>Problema:</strong> Le AI generaliste (ChatGPT, Claude, Gemini) non sono
+                        aggiornate sui lotti farmaceutici e possono inventare effetti collaterali.</p>
+                    <hr style="margin: 1rem 0; border-color: var(--color-gray-100);">
+                    <p class="card-text" style="color: var(--color-success);"><strong>✅ Soluzione AURA:</strong>
+                        Architettura "closed-domain". Se l'utente chiede qualcosa non presente nel database AIFA, AURA
+                        risponde: "Non ho dati certificati su questo. Ti consiglio di parlarne col medico".</p>
+                </div>
+                <div class="card">
+                    <h4 style="color: var(--color-warning);">⚠️ Accuratezza Segnalazione</h4>
+                    <p class="card-text"><strong>Problema:</strong> Un utente potrebbe sbagliare a indicare il farmaco.
+                    </p>
+                    <hr style="margin: 1rem 0; border-color: var(--color-gray-100);">
+                    <p class="card-text" style="color: var(--color-success);"><strong>✅ Soluzione AURA:</strong> Il QR
+                        Code può essere univoco per prodotto (sulla scatola) o l'AI può chiedere di inquadrare la
+                        scatola (Computer Vision) per identificare nome, lotto e scadenza.</p>
+                </div>
+                <div class="card">
+                    <h4 style="color: var(--color-primary);">ℹ️ Ruolo Non Diagnostico</h4>
+                    <p class="card-text"><strong>Importante:</strong> AURA non è un medico e non fa diagnosi.</p>
+                    <hr style="margin: 1rem 0; border-color: var(--color-gray-100);">
+                    <p class="card-text" style="color: var(--color-success);"><strong>✅ Disclaimer:</strong> "Sto
+                        analizzando la compatibilità dei tuoi sintomi con i dati noti del farmaco per aiutarti a
+                        segnalare correttamente. Non sto facendo una diagnosi medica."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Il Punto di Forza</h2>
+            </div>
+            <div class="card"
+                style="max-width: 800px; margin: 0 auto; text-align: center; background: var(--gradient-primary); color: white; padding: 3rem;">
+                <h3 style="color: white; margin-bottom: 1rem;">🏆 Affidabilità Scientifica</h3>
+                <p style="font-size: 1.125rem; color: rgba(255,255,255,0.9); margin-bottom: 1.5rem;">
+                    Il punto di forza di AURA è che questo servizio è <strong>affidabile</strong> e si basa su
+                    <strong>dati scientifici</strong> e <strong>regolamentazioni AIFA</strong>, piuttosto che su dati
+                    raccolti da ChatGPT che possono derivare da fonti poco attendibili e sporcati da allucinazioni.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <span
+                        style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.875rem;">🔬
+                        Dati Certificati AIFA</span>
+                    <span
+                        style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.875rem;">📚
+                        Letteratura Scientifica</span>
+                    <span
+                        style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.875rem;">🚫
+                        Zero Hallucinations</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Segnala oggi per cure migliori domani</h2>
+                <a href="sitografia.html" class="btn btn-lg">Vai alla Sitografia →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 AURA - Progetto di Farmacovigilanza Intelligente</p>
+                <p>Segnala oggi per cure migliori domani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 50); });
+        document.getElementById('navbarToggle').addEventListener('click', () => { document.getElementById('navbarMenu').classList.toggle('open'); });
+    </script>
+</body>
+
+</html>

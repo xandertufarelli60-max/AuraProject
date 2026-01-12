@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AURA - Analisi del Settore: Cinque Forze di Porter e mercato Healthcare Chatbot per la farmacovigilanza.">
+    <title>Analisi del Settore - AURA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo-aura.png" alt="AURA Logo" class="logo-img">
+                AURA
+            </a>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="analisi-settore.html" class="navbar-link active">Analisi Settore</a>
+                <a href="farmacovigilanza.html" class="navbar-link">Farmacovigilanza</a>
+                <a href="pestle.html" class="navbar-link">PESTLE</a>
+                <a href="swot.html" class="navbar-link">SWOT</a>
+                <a href="personas.html" class="navbar-link">Buyer Personas</a>
+                <a href="business-case.html" class="navbar-link">Business Case</a>
+                <a href="sitografia.html" class="navbar-link">Sitografia</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Analisi del <span class="text-gradient">Settore</span></h1>
+            <p>Analisi competitiva del mercato Healthcare Chatbot e opportunità per AURA nel settore della
+                farmacovigilanza.</p>
+        </div>
+    </header>
+
+    <!-- Macro vs Micro Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Analisi Macro vs Micro</h2>
+                <p>Due livelli di analisi per comprendere il posizionamento strategico di AURA.</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                            <path d="M2 12h20" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title">Analisi di Settore (Macro)</h4>
+                    <p class="card-text mb-4">
+                        Visione d'insieme del contesto normativo, tecnologico e competitivo in cui opera AURA.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <div class="feature-icon">→</div>
+                            <div class="feature-text">
+                                <p style="margin:0">Regolamentazione farmaceutica europea (EMA, AIFA)</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">→</div>
+                            <div class="feature-text">
+                                <p style="margin:0">Evoluzione delle AI conversazionali in healthcare</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">→</div>
+                            <div class="feature-text">
+                                <p style="margin:0">Trend di digitalizzazione post-pandemia</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon accent">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                            <circle cx="11" cy="11" r="3" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title">Analisi di Mercato (Micro)</h4>
+                    <p class="card-text mb-4">
+                        Focus specifico sul segmento target e le dinamiche competitive dirette.
+                    </p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <div class="feature-icon">→</div>
+                            <div class="feature-text">
+                                <p style="margin:0">Target clienti: pazienti, farmacie, aziende pharma</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">→</div>
+                            <div class="feature-text">
+                                <p style="margin:0">Competitor diretti: chatbot sanitari generalisti</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-icon">→</div>
+                            <div class="feature-text">
+                                <p style="margin:0">Canali di distribuzione: QR Code, web app, farmacie</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Porter's Five Forces -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Le Cinque Forze di <span class="text-gradient">Porter</span></h2>
+                <p>Analisi della struttura competitiva del mercato e delle forze che influenzano la redditività.</p>
+            </div>
+
+            <div class="porter-container">
+                <div class="porter-center">
+                    <h3 style="margin-bottom: 0.5rem;">Rivalità Competitiva</h3>
+                    <p style="font-size: 0.875rem; opacity: 0.9; margin: 0;">
+                        Competizione tra chatbot AI esistenti nel settore healthcare. AURA si differenzia per
+                        l'approccio closed-domain certificato.
+                    </p>
+                </div>
+
+                <div class="porter-forces">
+                    <div class="porter-force">
+                        <h5>🏛️ Potere dei Fornitori (AIFA)</h5>
+                        <p>
+                            <strong>Alto.</strong> AIFA detiene il monopolio sui dati ufficiali di farmacovigilanza.
+                            La dipendenza dai database istituzionali è un vincolo critico ma anche un vantaggio
+                            competitivo se si ottiene la certificazione.
+                        </p>
+                    </div>
+
+                    <div class="porter-force">
+                        <h5>🚀 Minaccia Nuovi Entranti</h5>
+                        <p>
+                            <strong>Media-Alta.</strong> Big Tech (Google Health, Amazon Care, DeepMind) potrebbero
+                            entrare nel mercato.
+                            Barriere: certificazioni regolatorie, partnership istituzionali, specializzazione
+                            domain-specific.
+                        </p>
+                    </div>
+
+                    <div class="porter-force">
+                        <h5>🔄 Prodotti Sostitutivi</h5>
+                        <p>
+                            <strong>Alta.</strong> ChatGPT, Claude e altre AI generaliste sono già usate per
+                            autodiagnosi.
+                            Rischio "hallucinations" e dati non certificati. AURA contrasta con affidabilità
+                            scientifica.
+                        </p>
+                    </div>
+
+                    <div class="porter-force">
+                        <h5>👥 Potere degli Acquirenti</h5>
+                        <p>
+                            <strong>Medio.</strong> I pazienti hanno molte alternative gratuite (Google, social).
+                            Le aziende Pharma cercano soluzioni certificate e scalabili. La leva è la qualità del dato.
+                        </p>
+                    </div>
+
+                    <div class="porter-force" style="grid-column: span 2;">
+                        <h5>⚔️ Rivalità tra Competitor</h5>
+                        <p>
+                            <strong>Crescente.</strong> Il mercato Healthcare Chatbot è in espansione. AURA si posiziona
+                            come "Anti-ChatGPT"
+                            specializzato sulla farmacovigilanza, puntando su certificazione e partnership
+                            istituzionali.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Healthcare Chatbot Market</h2>
+                <p>Il mercato globale dei chatbot sanitari: proiezioni 2018-2030.</p>
+            </div>
+
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h3 class="mb-4">Crescita Esponenziale</h3>
+                    <p>
+                        Il mercato globale degli Healthcare Chatbot sta vivendo una crescita senza precedenti,
+                        spinta dall'adozione massiva post-pandemia e dall'evoluzione delle tecnologie AI.
+                    </p>
+
+                    <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 2rem;">
+                        <div class="stat-item" style="text-align: left; padding: 1rem 0;">
+                            <div class="stat-number" style="font-size: 2rem;">$314M</div>
+                            <div class="stat-label">Valore mercato 2023</div>
+                        </div>
+                        <div class="stat-item" style="text-align: left; padding: 1rem 0;">
+                            <div class="stat-number" style="font-size: 2rem;">$1.6B</div>
+                            <div class="stat-label">Proiezione 2030</div>
+                        </div>
+                        <div class="stat-item" style="text-align: left; padding: 1rem 0;">
+                            <div class="stat-number" style="font-size: 2rem;">24.3%</div>
+                            <div class="stat-label">CAGR 2023-2030</div>
+                        </div>
+                        <div class="stat-item" style="text-align: left; padding: 1rem 0;">
+                            <div class="stat-number" style="font-size: 2rem;">50%</div>
+                            <div class="stat-label">Riduzione costi (IQVIA)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 2rem;">
+                    <h5 style="margin-bottom: 1.5rem; text-align: center;">📈 Trend del Mercato</h5>
+                    <!-- Chart Visualization -->
+                    <div
+                        style="display: flex; align-items: flex-end; justify-content: space-around; height: 200px; padding: 1rem; background: var(--color-gray-50); border-radius: var(--radius-lg);">
+                        <div style="text-align: center;">
+                            <div
+                                style="height: 30px; width: 50px; background: var(--color-gray-300); border-radius: 4px 4px 0 0;">
+                            </div>
+                            <small style="font-size: 0.7rem; color: var(--color-gray-500);">2018</small>
+                        </div>
+                        <div style="text-align: center;">
+                            <div
+                                style="height: 50px; width: 50px; background: var(--color-gray-400); border-radius: 4px 4px 0 0;">
+                            </div>
+                            <small style="font-size: 0.7rem; color: var(--color-gray-500);">2020</small>
+                        </div>
+                        <div style="text-align: center;">
+                            <div
+                                style="height: 80px; width: 50px; background: var(--color-primary); border-radius: 4px 4px 0 0;">
+                            </div>
+                            <small style="font-size: 0.7rem; color: var(--color-gray-500);">2023</small>
+                        </div>
+                        <div style="text-align: center;">
+                            <div
+                                style="height: 120px; width: 50px; background: var(--color-accent); border-radius: 4px 4px 0 0;">
+                            </div>
+                            <small style="font-size: 0.7rem; color: var(--color-gray-500);">2026</small>
+                        </div>
+                        <div style="text-align: center;">
+                            <div
+                                style="height: 180px; width: 50px; background: var(--gradient-primary); border-radius: 4px 4px 0 0;">
+                            </div>
+                            <small style="font-size: 0.7rem; color: var(--color-gray-500);">2030</small>
+                        </div>
+                    </div>
+                    <p
+                        style="text-align: center; font-size: 0.75rem; color: var(--color-gray-400); margin-top: 1rem; margin-bottom: 0;">
+                        Fonte: IQVIA Institute, 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunity Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>L'Opportunità per AURA</h2>
+                <p>Come AURA si posiziona nel panorama competitivo.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title">Certificazione</h4>
+                    <p class="card-text">
+                        Partnership con AIFA per diventare lo standard ufficiale di segnalazione.
+                        Barriera all'ingresso insormontabile per competitor generalisti.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon accent">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title">Specializzazione</h4>
+                    <p class="card-text">
+                        Focus esclusivo sulla farmacovigilanza. Nessuna "hallucination",
+                        solo dati certificati da database istituzionali.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon ai">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                            <line x1="9" y1="9" x2="9.01" y2="9" />
+                            <line x1="15" y1="9" x2="15.01" y2="9" />
+                        </svg>
+                    </div>
+                    <h4 class="card-title">User Experience</h4>
+                    <p class="card-text">
+                        Accesso immediato via QR Code, linguaggio naturale,
+                        nessuna registrazione richiesta. Ottimizzato per la Gen Z.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Segnala oggi per cure migliori domani</h2>
+                <p>Scopri come AURA rivoluziona il processo di farmacovigilanza.</p>
+                <a href="farmacovigilanza.html" class="btn btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                    Vai a Farmacovigilanza
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <img src="images/logo-aura.png" alt="AURA Logo" class="logo-img">
+                        AURA
+                    </div>
+                    <p class="footer-desc">
+                        La tua salute, in un click. Un assistente AI certificato per la farmacovigilanza.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Sezioni</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="analisi-settore.html">Analisi Settore</a>
+                        <a href="farmacovigilanza.html">Farmacovigilanza</a>
+                        <a href="pestle.html">PESTLE</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Analisi</h4>
+                    <div class="footer-links">
+                        <a href="swot.html">SWOT</a>
+                        <a href="personas.html">Buyer Personas</a>
+                        <a href="business-case.html">Business Case</a>
+                        <a href="sitografia.html">Sitografia</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Riferimenti</h4>
+                    <div class="footer-links">
+                        <a href="https://www.aifa.gov.it" target="_blank" rel="noopener">AIFA</a>
+                        <a href="https://www.ema.europa.eu" target="_blank" rel="noopener">EMA</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 AURA - Progetto di Farmacovigilanza Intelligente</p>
+                <p>Segnala oggi per cure migliori domani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>

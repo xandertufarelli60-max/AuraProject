@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AURA - Analisi PESTLE: fattori Politici, Economici, Sociali, Tecnologici, Legali ed Ecologici.">
+    <title>Analisi PESTLE - AURA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/logo-aura.png" alt="AURA Logo" class="logo-img">
+                AURA</a>
+            <button class="navbar-toggle" id="navbarToggle"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="analisi-settore.html" class="navbar-link">Analisi Settore</a>
+                <a href="farmacovigilanza.html" class="navbar-link">Farmacovigilanza</a>
+                <a href="pestle.html" class="navbar-link active">PESTLE</a>
+                <a href="swot.html" class="navbar-link">SWOT</a>
+                <a href="personas.html" class="navbar-link">Buyer Personas</a>
+                <a href="business-case.html" class="navbar-link">Business Case</a>
+                <a href="sitografia.html" class="navbar-link">Sitografia</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Analisi <span class="text-gradient">PESTLE</span></h1>
+            <p>Fattori macro-ambientali che influenzano il progetto AURA.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>I 6 Fattori PESTLE</h2>
+                <p>Analisi dei fattori esterni che impattano sul successo di AURA.</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="pestle-table">
+                    <thead>
+                        <tr>
+                            <th>Fattore</th>
+                            <th>Analisi e Impatto sul Progetto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong style="color: var(--color-primary);">P</strong> Politico</td>
+                            <td>
+                                <strong>Collaborazione pubblico-privato:</strong> AIFA ed EMA cercano di modernizzare la
+                                Rete Nazionale Farmacovigilanza (RNF). Un sistema che pre-compila segnalazioni di
+                                qualità alleggerisce il carico burocratico statale.<br><br>
+                                <strong>Lotta alla disinformazione:</strong> Le istituzioni supportano strumenti che
+                                contrastano l'uso di AI generiche per l'autodiagnosi, che spesso portano a falsi allarmi
+                                o panico ingiustificato.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--color-primary);">E</strong> Economico</td>
+                            <td>
+                                <strong>Costo del "dato sporco":</strong> Le aziende Pharma spendono milioni per
+                                ricontattare pazienti che hanno inviato segnalazioni incomplete. AURA abbatte questi
+                                costi guidando l'utente a inserire subito i dati corretti.<br><br>
+                                <strong>Efficienza R&D:</strong> Database aggiornati in tempo reale con descrizioni
+                                sintomatologiche precise permettono di identificare prima i difetti dei farmaci,
+                                riducendo i costi di eventuali richiami.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--color-primary);">S</strong> Sociale</td>
+                            <td>
+                                <strong>Digital Health Literacy:</strong> Il cittadino medio fatica a distinguere un
+                                effetto collaterale reale da un sintomo non correlato. AURA agisce come un "tutor" che
+                                educa l'utente mentre raccoglie la segnalazione.<br><br>
+                                <strong>Accessibilità democratica:</strong> L'uso del QR Code in farmacia democratizza
+                                l'accesso: non serve scaricare app o comprare device costosi. Basta lo smartphone che
+                                tutti hanno.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--color-primary);">T</strong> Tecnologico</td>
+                            <td>
+                                <strong>RAG (Retrieval-Augmented Generation):</strong> AURA usa questa tecnologia per
+                                vincolare le risposte solo a documenti validati (AIFA, Paper Scientifici), eliminando le
+                                "hallucinations" tipiche delle AI generaliste.<br><br>
+                                <strong>Interoperabilità (Standard E2B):</strong> La capacità di trasformare una chat
+                                informale in un report tecnico standardizzato (XML E2B R3) pronto per i database
+                                aziendali e AIFA.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--color-primary);">L</strong> Legale</td>
+                            <td>
+                                <strong>Compliance AIFA:</strong> Il sistema rispetta i rigidi standard di segnalazione
+                                avversa. AURA funge da "delegato alla compilazione" digitale, garantendo che i campi
+                                obbligatori siano sempre presenti.<br><br>
+                                <strong>GDPR:</strong> La gestione del consenso avviene istantaneamente via web-app al
+                                momento della scansione del QR Code. Possibilità di utilizzo in modalità anonima.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: var(--color-primary);">E</strong> Ecologico</td>
+                            <td>
+                                <strong>Digitalizzazione totale:</strong> Eliminazione dei moduli cartacei di
+                                segnalazione presenti nelle farmacie e negli studi medici, spesso smarriti o
+                                illeggibili. Riduzione dell'impatto ambientale della burocrazia sanitaria.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Impatto sui Stakeholder</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">🏥</div>
+                    <h4 class="card-title">Istituzioni (AIFA/EMA)</h4>
+                    <p class="card-text">Modernizzazione RNF, dati di qualità superiore, alleggerimento carico
+                        burocratico, lotta alle fake news mediche.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon accent">💊</div>
+                    <h4 class="card-title">Aziende Pharma</h4>
+                    <p class="card-text">Riduzione costi follow-up, database aggiornati real-time, compliance
+                        automatizzata, early warning system.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon ai">👥</div>
+                    <h4 class="card-title">Pazienti/Cittadini</h4>
+                    <p class="card-text">Accesso facile via QR, educazione sanitaria, risposte certificate, nessuna app
+                        da scaricare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Segnala oggi per cure migliori domani</h2>
+                <a href="swot.html" class="btn btn-lg">Vai a SWOT →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 AURA - Progetto di Farmacovigilanza Intelligente</p>
+                <p>Segnala oggi per cure migliori domani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 50); });
+        document.getElementById('navbarToggle').addEventListener('click', () => { document.getElementById('navbarMenu').classList.toggle('open'); });
+    </script>
+</body>
+
+</html>

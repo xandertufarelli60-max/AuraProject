@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AURA - Processo di Farmacovigilanza: definizione OMS, attori coinvolti e integrazione AURA.">
+    <title>Farmacovigilanza - AURA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/logo-aura.png" alt="AURA Logo" class="logo-img">
+                AURA</a>
+            <button class="navbar-toggle" id="navbarToggle"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="analisi-settore.html" class="navbar-link">Analisi Settore</a>
+                <a href="farmacovigilanza.html" class="navbar-link active">Farmacovigilanza</a>
+                <a href="pestle.html" class="navbar-link">PESTLE</a>
+                <a href="swot.html" class="navbar-link">SWOT</a>
+                <a href="personas.html" class="navbar-link">Buyer Personas</a>
+                <a href="business-case.html" class="navbar-link">Business Case</a>
+                <a href="sitografia.html" class="navbar-link">Sitografia</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Processo di <span class="text-gradient">Farmacovigilanza</span></h1>
+            <p>Comprendere il sistema di monitoraggio dei farmaci e come AURA lo rivoluziona.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h2 class="mb-4">Cos'è la Farmacovigilanza?</h2>
+                    <div class="card card-glass" style="border-left: 4px solid var(--color-primary);">
+                        <p style="font-size: 1.125rem; font-style: italic; margin: 0; color: var(--color-gray-700);">
+                            "La scienza e le attività relative all'individuazione, valutazione, comprensione e
+                            prevenzione degli effetti avversi o di qualsiasi altro problema correlato ai farmaci."
+                        </p>
+                        <p
+                            style="margin: 1rem 0 0; font-size: 0.875rem; color: var(--color-primary); font-weight: 600;">
+                            — OMS</p>
+                    </div>
+                </div>
+                <div class="card text-center" style="padding: 2rem;">
+                    <img src="images/farmacovigilanza-process.png" alt="Processo di Farmacovigilanza"
+                        class="section-image" style="max-width: 280px; margin: 0 auto;">
+                    <h4 style="color: var(--color-primary); margin-top: 1rem;">Monitoraggio Continuo</h4>
+                    <p style="margin: 0; font-size: 0.875rem;">Dalla segnalazione alla valutazione scientifica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gli Attori Coinvolti</h2>
+                <p>Le istituzioni che orchestrano il sistema di farmacovigilanza.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <div class="card-icon mx-auto">🏛️</div>
+                    <h4 class="card-title">AIFA</h4>
+                    <p class="card-text">Agenzia Italiana del Farmaco. Gestisce la Rete Nazionale di Farmacovigilanza
+                        (RNF).</p>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon accent mx-auto">🌍</div>
+                    <h4 class="card-title">EMA</h4>
+                    <p class="card-text">European Medicines Agency. Coordina la vigilanza europea e gestisce
+                        EudraVigilance.</p>
+                </div>
+                <div class="card text-center">
+                    <div class="card-icon ai mx-auto">👥</div>
+                    <h4 class="card-title">PRAC</h4>
+                    <p class="card-text">Pharmacovigilance Risk Assessment Committee. Valuta i segnali di sicurezza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Il Processo Step-by-Step</h2>
+                <p>Le 8 fasi dalla segnalazione alle decisioni regolatorie.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4>📋 Rilevazione evento avverso</h4>
+                        <p>Cittadino o operatore nota una sospetta reazione avversa (ADR).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4>✍️ Segnalazione spontanea</h4>
+                        <p>La reazione viene segnalata tramite canali ufficiali. AURA semplifica questo passaggio.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4>💾 Raccolta e registrazione</h4>
+                        <p>La segnalazione entra nella RNF e viene trasmessa a EudraVigilance in formato E2B R3.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4>🔬 Valutazione scientifica</h4>
+                        <p>Esperti analizzano il nesso causale tra farmaco ed evento avverso.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h4>📊 Rilevazione safety signals</h4>
+                        <p>Identificazione di pattern ricorrenti e nuove ADR non note.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">6</div>
+                    <div class="timeline-content">
+                        <h4>⚖️ Decisioni regolatorie</h4>
+                        <p>Aggiornamento RCP, restrizioni, minimizzazione rischio o ritiro farmaco.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">7</div>
+                    <div class="timeline-content">
+                        <h4>📢 Comunicazione del rischio</h4>
+                        <p>Diffusione informazioni a medici, farmacisti e pazienti.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">8</div>
+                    <div class="timeline-content">
+                        <h4>🔄 Monitoraggio continuo</h4>
+                        <p>Rivalutazione costante del rapporto rischio/beneficio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>I Limiti del Sistema Attuale</h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="card" style="border-left: 4px solid var(--color-error);">
+                    <h4 style="color: var(--color-error);">❌ Under-reporting</h4>
+                    <p class="card-text">Molte reazioni non vengono segnalate. Moduli complessi e burocratici.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--color-error);">
+                    <h4 style="color: var(--color-error);">❌ Qualità variabile</h4>
+                    <p class="card-text">Segnalazioni incomplete, vaghe, senza dosaggio o durata.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--color-error);">
+                    <h4 style="color: var(--color-error);">❌ Difficoltà causalità</h4>
+                    <p class="card-text">Complesso stabilire se la reazione è causata dal farmaco.</p>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--color-error);">
+                    <h4 style="color: var(--color-error);">❌ Bias di segnalazione</h4>
+                    <p class="card-text">Effetto notorietà mediatica sulle segnalazioni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>L'Integrazione di <span class="text-gradient">AURA</span></h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="card" style="background: var(--gradient-primary); color: white;">
+                    <h3 style="color: white;">🛡️ Filtro di Verità Scientifica</h3>
+                    <p style="color: rgba(255,255,255,0.9);">AURA si posiziona tra paziente e istituzioni garantendo
+                        dati affidabili.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>✓ Traduce linguaggio naturale in MedDRA</li>
+                        <li>✓ Elimina le "hallucinations"</li>
+                        <li>✓ Genera report E2B R3</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>⚙️ Pre-Filtro Regolatorio</h3>
+                    <p>L'AI filtra i dati prima dell'intervento umano.</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>🔴 Alta priorità: evento grave</li>
+                        <li>🟡 Media priorità: da valutare</li>
+                        <li>🟢 Bassa priorità: evento noto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Segnala oggi per cure migliori domani</h2>
+                <a href="pestle.html" class="btn btn-lg">Vai a PESTLE →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 AURA - Progetto di Farmacovigilanza Intelligente</p>
+                <p>Segnala oggi per cure migliori domani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 50); });
+        document.getElementById('navbarToggle').addEventListener('click', () => { document.getElementById('navbarMenu').classList.toggle('open'); });
+    </script>
+</body>
+
+</html>

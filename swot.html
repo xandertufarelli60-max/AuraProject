@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AURA - Analisi SWOT: confronto AS-IS vs TO-BE del processo di farmacovigilanza.">
+    <title>Analisi SWOT - AURA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/logo-aura.png" alt="AURA Logo" class="logo-img">
+                AURA</a>
+            <button class="navbar-toggle" id="navbarToggle"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="analisi-settore.html" class="navbar-link">Analisi Settore</a>
+                <a href="farmacovigilanza.html" class="navbar-link">Farmacovigilanza</a>
+                <a href="pestle.html" class="navbar-link">PESTLE</a>
+                <a href="swot.html" class="navbar-link active">SWOT</a>
+                <a href="personas.html" class="navbar-link">Buyer Personas</a>
+                <a href="business-case.html" class="navbar-link">Business Case</a>
+                <a href="sitografia.html" class="navbar-link">Sitografia</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Analisi <span class="text-gradient">SWOT</span></h1>
+            <p>Confronto tra situazione attuale (AS-IS) e modello AURA (TO-BE).</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Matrice SWOT Comparativa</h2>
+                <p>Punti di forza, debolezze, opportunità e minacce del modello AURA.</p>
+            </div>
+
+            <div class="swot-grid">
+                <div class="swot-card strengths">
+                    <h4>💪 Strengths (Punti di Forza)</h4>
+                    <p style="font-size: 0.75rem; color: var(--color-success); margin-bottom: 1rem;">AURA TO-BE</p>
+                    <ul>
+                        <li><strong>Affidabilità scientifica:</strong> AURA non "inventa". Risponde solo con database
+                            AIFA e letteratura scientifica. È un "Anti-ChatGPT".</li>
+                        <li><strong>Qualità del dato:</strong> L'IA guida l'utente ("Quanto è forte da 1 a 10? Dopo
+                            quanto tempo?"). Report perfetti.</li>
+                        <li><strong>Immediatezza Phygital:</strong> Il QR Code intercetta il bisogno nel momento esatto
+                            in cui sorge il dubbio.</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card weaknesses">
+                    <h4>⚠️ Weaknesses (Debolezze)</h4>
+                    <p style="font-size: 0.75rem; color: var(--color-error); margin-bottom: 1rem;">Situazione AS-IS</p>
+                    <ul>
+                        <li><strong>Segnalazioni "spazzatura":</strong> I pazienti inviano report vaghi ("Mi ha fatto
+                            male") inutilizzabili senza follow-up costoso.</li>
+                        <li><strong>Panico da fake news:</strong> I pazienti cercano su Google, trovano disinformazione
+                            e abbandonano la cura.</li>
+                        <li><strong>Barriera burocratica:</strong> Il modulo AIFA è complesso. Molti rinunciano a
+                            segnalare.</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card opportunities">
+                    <h4>🚀 Opportunities (Opportunità)</h4>
+                    <p style="font-size: 0.75rem; color: var(--color-primary); margin-bottom: 1rem;">AURA TO-BE</p>
+                    <ul>
+                        <li><strong>Database unificato:</strong> Creare un ecosistema dove i dati anonimizzati
+                            migliorano la sicurezza per tutti.</li>
+                        <li><strong>Partnership istituzionale:</strong> AURA potrebbe diventare lo standard certificato
+                            dal Ministero della Salute.</li>
+                        <li><strong>Fiducia del consumatore:</strong> Posizionare il brand farmaceutico come
+                            "trasparente" e "scientifico".</li>
+                    </ul>
+                </div>
+
+                <div class="swot-card threats">
+                    <h4>⛔ Threats (Minacce)</h4>
+                    <p style="font-size: 0.75rem; color: var(--color-warning); margin-bottom: 1rem;">Rischi da gestire
+                    </p>
+                    <ul>
+                        <li><strong>Resistenza farmacisti:</strong> Se il QR Code non è visibile o il farmacista non lo
+                            promuove, l'adozione cala.</li>
+                        <li><strong>Privacy paranoia:</strong> L'utente potrebbe temere che i dati sanitari finiscano
+                            online. Necessaria forte rassicurazione sulla crittografia.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>So What? Il Paradosso Informativo</h2>
+            </div>
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="card" style="border-left: 4px solid var(--color-error);">
+                    <h4 style="color: var(--color-error);">😰 Il Problema</h4>
+                    <p>Viviamo nell'era dell'informazione, ma sulla salute c'è il <strong>caos</strong>.</p>
+                    <ul style="margin-top: 1rem; color: var(--color-gray-600);">
+                        <li>→ I pazienti usano ChatGPT per autodiagnosi, ottenendo risposte pericolose
+                            ("Hallucinations")</li>
+                        <li>→ Le aziende Pharma e AIFA hanno bisogno di dati, ma ricevono moduli incompleti o
+                            illeggibili</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--color-success);">
+                    <h4 style="color: var(--color-success);">✅ La Soluzione AURA</h4>
+                    <p>AURA non è un semplice chatbot, è un <strong>"traduttore certificato"</strong>.</p>
+                    <ul style="margin-top: 1rem; color: var(--color-gray-600);">
+                        <li>→ Traduce il linguaggio naturale ("Mi gira la testa") in terminologia medica (MedDRA:
+                            "Vertigine")</li>
+                        <li>→ Traduce i dati complessi di AIFA in rassicurazioni comprensibili per l'utente</li>
+                        <li>→ Sostituisce paura e incertezza con dati scientifici: <em>Paziente più sicuro →
+                                segnalazione migliore → farmaco più sicuro</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Segnala oggi per cure migliori domani</h2>
+                <a href="personas.html" class="btn btn-lg">Vai a Buyer Personas →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 AURA - Progetto di Farmacovigilanza Intelligente</p>
+                <p>Segnala oggi per cure migliori domani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 50); });
+        document.getElementById('navbarToggle').addEventListener('click', () => { document.getElementById('navbarMenu').classList.toggle('open'); });
+    </script>
+</body>
+
+</html>

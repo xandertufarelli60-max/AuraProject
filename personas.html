@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AURA - Buyer Personas e Customer Journey: i 4 archetipi utente e le strategie di ingaggio.">
+    <title>Buyer Personas - AURA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="images/logo-aura.png" alt="AURA Logo" class="logo-img">
+                AURA</a>
+            <button class="navbar-toggle" id="navbarToggle"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="analisi-settore.html" class="navbar-link">Analisi Settore</a>
+                <a href="farmacovigilanza.html" class="navbar-link">Farmacovigilanza</a>
+                <a href="pestle.html" class="navbar-link">PESTLE</a>
+                <a href="swot.html" class="navbar-link">SWOT</a>
+                <a href="personas.html" class="navbar-link active">Buyer Personas</a>
+                <a href="business-case.html" class="navbar-link">Business Case</a>
+                <a href="sitografia.html" class="navbar-link">Sitografia</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Buyer <span class="text-gradient">Personas</span></h1>
+            <p>I 4 archetipi utente e le strategie di adozione per AURA.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>👍 Gli Adopter: Motori del Cambiamento</h2>
+                <p>Target primario per la fase di lancio, essenziali per generare i primi volumi di utilizzo.</p>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Jessica Coniglio -->
+                <div class="persona-card">
+                    <div class="persona-header">
+                        <img src="images/persona-jessica.png" alt="Jessica Coniglio" class="persona-avatar-img">
+                        <div class="persona-name">Jessica Coniglio</div>
+                        <div class="persona-type">Early Adopter Tecnologico</div>
+                    </div>
+                    <div class="persona-body">
+                        <div class="persona-label">Profilo</div>
+                        <p class="persona-info">Generazione nativa digitale che cerca immediatezza e affidabilità. Non
+                            ha barriere tecnologiche ma soffre l'eccesso di informazioni non verificate online.</p>
+
+                        <div class="persona-label">Ruolo Strategico</div>
+                        <p class="persona-info"><strong>Viralizzatore.</strong> Prima a testare il QR code per curiosità
+                            e a diffonderne l'uso nel suo network, validando l'utilità sociale contro le fake news.</p>
+
+                        <div class="persona-label">Leva di Ingaggio</div>
+                        <p class="persona-info" style="margin-bottom: 0;"><em>"Verifica qui quello che hai letto sui
+                                social"</em><br>Velocità e validazione scientifica.</p>
+
+                        <span class="persona-tag adopter">Adopter</span>
+                        <span class="persona-tag">Gen Z</span>
+                        <span class="persona-tag">Social Media</span>
+                    </div>
+                </div>
+
+                <!-- Giulia Rossi -->
+                <div class="persona-card">
+                    <div class="persona-header" style="background: var(--gradient-accent);">
+                        <img src="images/persona-giulia.png" alt="Giulia Rossi" class="persona-avatar-img">
+                        <div class="persona-name">Giulia Rossi</div>
+                        <div class="persona-type">Need-based Adopter</div>
+                    </div>
+                    <div class="persona-body">
+                        <div class="persona-label">Profilo</div>
+                        <p class="persona-info">Utente che si avvicina alla tecnologia per necessità concreta legata a
+                            patologia cronica. Motivazione: bisogno di sicurezza, non curiosità.</p>
+
+                        <div class="persona-label">Ruolo Strategico</div>
+                        <p class="persona-info"><strong>Retention (zoccolo duro).</strong> Garantisce utilizzo
+                            ricorrente e costante del servizio, fornendo dati longitudinali di alta qualità per la
+                            farmacovigilanza.</p>
+
+                        <div class="persona-label">Leva di Ingaggio</div>
+                        <p class="persona-info" style="margin-bottom: 0;"><em>"Un assistente sempre presente per la tua
+                                terapia"</em><br>Supporto continuo e rassicurazione.</p>
+
+                        <span class="persona-tag adopter">Adopter</span>
+                        <span class="persona-tag">Paziente Cronico</span>
+                        <span class="persona-tag">Retention</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>👎 I Detrattori: Barriere da Gestire</h2>
+                <p>Profili che non utilizzeranno AURA spontaneamente. La strategia mira a mitigare le resistenze.</p>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Mario Bianchi -->
+                <div class="persona-card">
+                    <div class="persona-header" style="background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);">
+                        <img src="images/persona-mario.png" alt="Mario Bianchi" class="persona-avatar-img">
+                        <div class="persona-name">Mario Bianchi</div>
+                        <div class="persona-type">Privacy Skeptic</div>
+                    </div>
+                    <div class="persona-body">
+                        <div class="persona-label">Profilo</div>
+                        <p class="persona-info">Profilo maschile, 50-60 anni, diffidente verso la digitalizzazione dei
+                            dati sanitari. Teme uso commerciale o controllo.</p>
+
+                        <div class="persona-label">Barriera</div>
+                        <p class="persona-info"><strong>Percepisce il QR code come sistema di tracciamento
+                                invasivo.</strong></p>
+
+                        <div class="persona-label">Strategia di Mitigazione</div>
+                        <p class="persona-info" style="margin-bottom: 0;"><strong>Modalità ospite.</strong> AURA
+                            permette segnalazioni in forma anonima, senza registrazione, esplicitando che nessun dato
+                            verrà salvato a fini commerciali.</p>
+
+                        <span class="persona-tag detractor">Detrattore</span>
+                        <span class="persona-tag">50-60 anni</span>
+                        <span class="persona-tag">Privacy</span>
+                    </div>
+                </div>
+
+                <!-- Elvira Rinaldi -->
+                <div class="persona-card">
+                    <div class="persona-header" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);">
+                        <img src="images/persona-elvira.png" alt="Elvira Rinaldi" class="persona-avatar-img">
+                        <div class="persona-name">Elvira Rinaldi</div>
+                        <div class="persona-type">Tech Laggard</div>
+                    </div>
+                    <div class="persona-body">
+                        <div class="persona-label">Profilo</div>
+                        <p class="persona-info">Profilo over 70, in politerapia, con scarsa alfabetizzazione digitale.
+                            Ritiene che la tecnologia disumanizzi il rapporto di cura.</p>
+
+                        <div class="persona-label">Barriera</div>
+                        <p class="persona-info"><strong>Incapacità fisica o cognitiva nell'utilizzare l'interfaccia
+                                digitale.</strong></p>
+
+                        <div class="persona-label">Strategia di Aggiramento</div>
+                        <p class="persona-info" style="margin-bottom: 0;"><strong>Human-in-the-loop.</strong> AURA
+                            diventa strumento per il farmacista. Elvira parla col farmacista che usa AURA su tablet,
+                            mantenendo l'interazione umana.</p>
+
+                        <span class="persona-tag detractor">Detrattore</span>
+                        <span class="persona-tag">Over 70</span>
+                        <span class="persona-tag">Politerapia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer <span class="text-gradient">Journey</span></h2>
+                <p>Percorsi dettagliati di adozione per ogni persona. Clicca per espandere le fasi.</p>
+            </div>
+
+            <div class="accordion">
+                <!-- JESSICA CONIGLIO - Early Adopter -->
+                <div class="accordion-item open">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="journey-persona-header">
+                            <img src="images/persona-jessica.png" alt="Jessica" class="journey-persona-avatar">
+                            <div class="journey-persona-info">
+                                <span class="journey-persona-name">🟢 Jessica Coniglio</span>
+                                <span class="journey-persona-type">Early Adopter Tecnologico</span>
+                            </div>
+                        </div>
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p style="margin-bottom: 1rem; color: var(--color-gray-600);"><strong>Obiettivo:</strong> Mi
+                                informo online per evitare bufale sanitarie. Qualsiasi cosa riguardi farmaci o salute,
+                                ho paura di cascare in fake news.</p>
+
+                            <div class="journey-phase awareness">
+                                <h5><span class="phase-number">1</span> Awareness</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Feed Instagram/TikTok sponsorizzato con post virale
+                                        "Hai letto questo sui farmaci? Verifica se è vero"</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Scorre rapidamente, ma l'hook è forte. Si ferma.
+                                        Salva il post per dopo. Commenta o tagga un'amica.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Curiosità, lieve ansia da info sanitarie, voglia di
+                                        condividere qualcosa di utile.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non so mai cosa sia vero sui farmaci online. Troppe
+                                        fake news.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Formato short, linguaggio immediato, claim
+                                        verificabile. Partnership con micro-influencer health.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase consideration">
+                                <h5><span class="phase-number">2</span> Consideration</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Landing page di AURA via link in bio o swipe-up
+                                    </div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Visita la landing. Guarda se c'è un pulsante per
+                                        fare una domanda. Valuta l'aspetto "affidabile" (logo AIFA/EMA).</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Scetticismo iniziale, aspettativa di qualcosa
+                                        "solido", paura del solito bot inutile.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Deve essere veloce, non voglio registrarmi. Deve
+                                        sembrare ufficiale.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">No login obbligatorio. UI mobile-first. Trust
+                                        signals (loghi AIFA, EMA, università). Copy diretto "Fai subito una domanda".
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase decision">
+                                <h5><span class="phase-number">3</span> Decision</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Chatbot AURA - prima interazione</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Digita domanda tipo: "È vero che la tachipirina
+                                        crea dipendenza?". Si aspetta risposta entro 3 secondi.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Impazienza. Se funziona → sorpresa positiva. Se è
+                                        lenta → abbandona.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non voglio risposte vaghe o link esterni da
+                                        cliccare. Voglio una risposta diretta.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Risposta chiara, con fonti citate (AIFA, EMA).
+                                        Possibilità di approfondire con link opzionale. Conferma esplicita della
+                                        veridicità.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase experience">
+                                <h5><span class="phase-number">4</span> Experience</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Interazione continuata nel chatbot + eventuali
+                                        notifiche push</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Torna su AURA ogni volta che legge qualcosa di
+                                        dubbio. Fa 2-3 domande alla settimana. Non si registra ancora.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Fiducia crescente. Sollievo nel trovare risposte
+                                        affidabili con facilità.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non voglio mille notifiche spam. Voglio poter
+                                        tornare quando mi serve.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Notifiche opzionali e personalizzabili. Bookmark
+                                        risposte precedenti. Zero spam, zero marketing aggressivo.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase loyalty">
+                                <h5><span class="phase-number">5</span> Loyalty</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Condivisione su chat private o story</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Consiglia AURA quando vede qualcuno nel gruppo
+                                        Whatsapp condividere un articolo sospetto. Fa screen della risposta AURA per
+                                        smentire bufale.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Gratificazione nel "fare bella figura" come persona
+                                        informata. Senso di utilità sociale.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Voglio poterla usare per rispondere a discussioni
+                                        in chat. Deve essere condivisibile.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Pulsante "Condividi risposta" su WhatsApp/Telegram.
+                                        Screenshot-friendly. Badge "Verificato da AURA" facilmente riconoscibile.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIULIA ROSSI - Need-based Adopter -->
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="journey-persona-header">
+                            <img src="images/persona-giulia.png" alt="Giulia" class="journey-persona-avatar">
+                            <div class="journey-persona-info">
+                                <span class="journey-persona-name">🟢 Giulia Rossi</span>
+                                <span class="journey-persona-type">Need-based Adopter</span>
+                            </div>
+                        </div>
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p style="margin-bottom: 1rem; color: var(--color-gray-600);"><strong>Obiettivo:</strong>
+                                Devo gestire una terapia cronica complicata. Non ricordo mai quando ho assunto cosa. Ho
+                                paura di sbagliare le dosi.</p>
+
+                            <div class="journey-phase awareness">
+                                <h5><span class="phase-number">1</span> Awareness</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Ambulatorio medico, farmacia. Flyer/QR code su
+                                        confezione farmaco</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Nota il QR code sulla scatola del farmaco. Chiede
+                                        informazioni alla farmacista. Porta a casa il flyer per leggerlo con calma.
+                                    </div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Stanchezza per la gestione della malattia. Speranza
+                                        che qualcosa la aiuti. Dubbio che sia complicato.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non voglio altre app da scaricare. Devo capire
+                                        subito se mi serve.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Accesso via QR senza app. Materiale cartaceo chiaro
+                                        in farmacia. Farmacista formato per spiegare AURA.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase consideration">
+                                <h5><span class="phase-number">2</span> Consideration</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Pagina web o webapp AURA, sezione "Gestione
+                                        terapia"</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Legge la sezione "Cosa può fare per me". Cerca la
+                                        funzione promemoria e tracciamento. Cerca recensioni o testimonianze.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Diffidenza verso strumenti digitali. Paura di non
+                                        capire come funziona. Bisogno di rassicurazione.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Ho bisogno che mi aiuti con la mia situazione, non
+                                        che sia generico. Deve essere semplice.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Sezione dedicata ai pazienti cronici. Testimonianze
+                                        video di persone simili. Info chiare su privacy e uso dei dati.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase decision">
+                                <h5><span class="phase-number">3</span> Decision</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Registrazione leggera + prima configurazione
+                                        terapia</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Inserisce i farmaci che assume. Imposta i
+                                        promemoria. Fa la prima domanda al chatbot (es. "posso prendere tachipirina col
+                                        mio farmaco?").</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Ansia che vada storto. Sollievo nel ricevere
+                                        risposta rassicurante e professionale.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Se devo inserire tutti i farmaci uno a uno
+                                        impazzisco. Devo poter chiedere aiuto.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Possibilità di caricare foto ricetta per
+                                        autocompilazione. Assistenza guidata step-by-step. Supporto testuale in chat.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase experience">
+                                <h5><span class="phase-number">4</span> Experience</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Uso regolare: promemoria, chat, dashboard terapia
+                                    </div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Riceve reminder giornalieri. Conferma assunzione.
+                                        Ogni tanto fa una domanda su effetti collaterali. Mostra lo storico al medico
+                                        durante la visita.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Senso di controllo sulla terapia. Meno ansia per
+                                        dimenticanze. Gratificazione nel vedere la propria aderenza.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Devo poter accedere anche offline. Il mio medico
+                                        deve poter vedere la mia situazione.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Dashboard stampabile/condivisibile con medico.
+                                        Accessibilità anche senza connessione dati (dati salvati localmente). Report
+                                        aderenza terapeutica.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase loyalty">
+                                <h5><span class="phase-number">5</span> Loyalty</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Feedback post-uso, aggiornamenti, community</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Raccomanda AURA ad altri pazienti cronici. Risponde
+                                        sondaggio soddisfazione. Si iscrive a newsletter con aggiornamenti sui suoi
+                                        farmaci.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Senso di appartenenza e di cura. Si sente ascoltata
+                                        come paziente, non solo come numero.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Vorrei essere avvisata se ci sono novità sui miei
+                                        farmaci, ma senza spam.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Alert personalizzati su aggiornamenti AIFA relativi
+                                        ai farmaci inseriti. Newsletter mensile con focus su patologie selezionate.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MARIO BIANCHI - Privacy Skeptic -->
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="journey-persona-header">
+                            <img src="images/persona-mario.png" alt="Mario" class="journey-persona-avatar">
+                            <div class="journey-persona-info">
+                                <span class="journey-persona-name">🔴 Mario Bianchi</span>
+                                <span class="journey-persona-type">Privacy Skeptic</span>
+                            </div>
+                        </div>
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p style="margin-bottom: 1rem; color: var(--color-gray-600);"><strong>Obiettivo:</strong>
+                                Evito qualsiasi cosa che mi chieda dati personali, specialmente sanitari. Non mi fido di
+                                app, QR code o strumenti digitali legati alla salute.</p>
+
+                            <div class="journey-phase awareness">
+                                <h5><span class="phase-number">1</span> Awareness</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Posters in ambulatorio, volantini in farmacia.
+                                        Passaparola da medico o farmacista.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Vede il QR code ma NON lo scansiona. Chiede info
+                                        alla farmacista. Prende un volantino, ma con diffidenza.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Sospetto. Fastidio verso ciò che sembra
+                                        "controllato". Sensazione di essere spiato.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non voglio dare i miei dati sanitari a nessuno. Non
+                                        mi fido dell'AI.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Claim esplicito: "Nessun dato salvato. Puoi usarlo
+                                        in modo anonimo". Materiale offline con FAQ privacy. Figura umana di mediazione
+                                        (farmacista).</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase consideration">
+                                <h5><span class="phase-number">2</span> Consideration</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Dialogo con farmacista o medico di fiducia</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Ascolta la farmacista mentre usa AURA su tablet per
+                                        rispondere a una sua domanda. Osserva senza partecipare direttamente.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Curiosità repressa. Resistenza ad ammettere che
+                                        potrebbe essere utile.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Voglio vedere cosa fa prima di dare i miei dati.
+                                        Non mi fido dei "clic facili".</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Farmacisti formati come "ambasciatori" di AURA.
+                                        Dimostrazione dal vivo senza richiesta di registrazione. Nessuna pressione.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase decision">
+                                <h5><span class="phase-number">3</span> Decision</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Uso mediato dal farmacista (o figlio/nipote)</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Accetta di fare una domanda al chatbot solo se lo
+                                        fa il farmacista per lui. Non inserisce dati personali.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Sollievo nel non doverlo usare in prima persona.
+                                        Ancora diffidente, ma leggermente rassicurato.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Voglio una risposta, ma non voglio "essere dentro
+                                        il sistema".</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Modalità ospite senza login. Risposta stampabile
+                                        per portarsela via. Nessun tracciamento, nessun cookie profilante.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase experience">
+                                <h5><span class="phase-number">4</span> Experience</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Interazione indiretta (famiglia, farmacista)</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Non usa AURA direttamente. Il figlio o farmacista
+                                        lo fanno per lui quando serve. Legge la risposta stampata.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Fiducia ancora bassa, ma accettazione del valore
+                                        ottenuto. Meno ostilità nel tempo.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Devo poter ricevere l'info senza usare lo
+                                        smartphone. È troppo complicato per me.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Risposte stampabili. Integrazione con farmacia per
+                                        "consegna" cartacea. Nessun login richiesto per accessi successivi.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase loyalty">
+                                <h5><span class="phase-number">5</span> Loyalty</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Passaparola controllato (famiglia, farmacia)</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Non consiglia direttamente, ma non critica. Accetta
+                                        che figlio/nipote lo usino. Chiede nuovamente info tramite farmacia.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Rispetto relativo per lo strumento, non loyalty
+                                        attiva.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non cambierò idea sul digitale, ma almeno questo
+                                        non mi ha obbligato a fare nulla.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Non forzare la conversione. Posizionarsi come
+                                        "servizio del farmacista", non come app da scaricare. Rispettare la resistenza.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ELVIRA RINALDI - Tech Laggard -->
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="journey-persona-header">
+                            <img src="images/persona-elvira.png" alt="Elvira" class="journey-persona-avatar">
+                            <div class="journey-persona-info">
+                                <span class="journey-persona-name">🔴 Elvira Rinaldi</span>
+                                <span class="journey-persona-type">Tech Laggard</span>
+                            </div>
+                        </div>
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            <p style="margin-bottom: 1rem; color: var(--color-gray-600);"><strong>Obiettivo:</strong>
+                                Prendo molti farmaci e faccio confusione. Vorrei capire meglio ma non so usare le
+                                tecnologie. Mi affido al farmacista o al figlio.</p>
+
+                            <div class="journey-phase awareness">
+                                <h5><span class="phase-number">1</span> Awareness</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Farmacia, medico di base, familiare/nipote</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Vede il QR code ma non sa cos'è. Il farmacista le
+                                        spiega che può aiutarla. Si affida interamente a lui.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Confusione. Soggezione verso la tecnologia. Paura
+                                        di fare errori.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non so usare il telefono per queste cose. Ma mi
+                                        serve aiuto a capire le medicine.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Formazione farmacisti per uso su tablet in
+                                        farmacia. Comunicazione visiva semplice, font grandi. Accesso "delegato" per
+                                        familiari.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase consideration">
+                                <h5><span class="phase-number">2</span> Consideration</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Schermo del tablet/computer del farmacista o del
+                                        familiare</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Ascolta la risposta letta a voce alta. Pone domande
+                                        di follow-up verbalmente al figlio o farmacista.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Gratitudine per chi l'aiuta. Si sente esclusa dal
+                                        digitale ma contenta che qualcuno faccia da ponte.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non capisco le parole tecniche. Devo sentirle
+                                        spiegare con calma.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Risposte leggibili ad alta voce. Linguaggio
+                                        semplificato su richiesta. Opzione "spiega più semplice" per ogni risposta.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase decision">
+                                <h5><span class="phase-number">3</span> Decision</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Decisione di affidarsi regolarmente al farmacista
+                                        che usa AURA</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Non "adotta" AURA, ma torna regolarmente a chiedere
+                                        al farmacista. Delega completamente l'interazione. Chiede di stampare la
+                                        risposta.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Sicurezza nel delegare. Fiducia nella figura umana
+                                        più che nello strumento.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Non posso ricordare tutto. Devo avere qualcosa di
+                                        scritto da portare a casa.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Stampa veloce da farmacia. Riepilogo giornaliero
+                                        stampabile. Zero login. Zero ostacoli tecnici.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase experience">
+                                <h5><span class="phase-number">4</span> Experience</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Interazione continua via farmacia o familiare</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Porta i fogli stampati al medico. Usa AURA come
+                                        "consulto preventivo" prima delle visite. Chiede al nipote di consultarlo prima
+                                        di prendere un farmaco nuovo.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Sollievo nel sentirsi seguita. Diminuzione
+                                        dell'ansia sui farmaci.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Devo potermi fidare di quello che dice. Non voglio
+                                        essere confusa ancora di più.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Risposte coerenti e senza contraddizioni.
+                                        Collegamento visivo tra farmaco e risposta. Accessibilità per caregiver
+                                        familiari.</div>
+                                </div>
+                            </div>
+
+                            <div class="journey-phase loyalty">
+                                <h5><span class="phase-number">5</span> Loyalty</h5>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Touchpoint</div>
+                                    <div class="journey-detail-text">Relazione continuativa con farmacia / familiare
+                                    </div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Azioni / Comportamenti</div>
+                                    <div class="journey-detail-text">Parla bene del "servizio della farmacia" (non di
+                                        AURA come prodotto). Consiglia l'esperienza ad amiche anziane.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Emozioni</div>
+                                    <div class="journey-detail-text">Gratitudine verso chi l'ha aiutata. Senso di
+                                        sicurezza. Non si sente abbandonata.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Pain Point / Bisogno</div>
+                                    <div class="journey-detail-text">Voglio continuare a poter contare su qualcuno che
+                                        mi aiuti.</div>
+                                </div>
+                                <div class="journey-detail">
+                                    <div class="journey-detail-label">Risposta di AURA</div>
+                                    <div class="journey-detail-text">Non puntare a "convertirla" al digitale. Continuare
+                                        a valorizzare il ruolo del farmacista. Fornire strumenti per caregiver.
+                                        Community engagement via canali tradizionali (telefono, carta).</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Segnala oggi per cure migliori domani</h2>
+                <a href="business-case.html" class="btn btn-lg">Vai al Business Case →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 AURA - Progetto di Farmacovigilanza Intelligente</p>
+                <p>Segnala oggi per cure migliori domani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 50); });
+        document.getElementById('navbarToggle').addEventListener('click', () => { document.getElementById('navbarMenu').classList.toggle('open'); });
+
+        // Accordion toggle function
+        function toggleAccordion(button) {
+            const accordionItem = button.closest('.accordion-item');
+            accordionItem.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
