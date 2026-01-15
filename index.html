@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 
 <body>
@@ -149,6 +151,73 @@
                     <div class="stat-counter-label">Dati validati scientificamente</div>
                     <div class="stat-counter-source">Fonti: AIFA, EMA, banche dati certificate</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presentazione Section -->
+    <section class="section presentation-section parallax-section" id="presentazione">
+        <div class="container">
+            <div class="section-header">
+                <span class="presentation-label">Presentazione</span>
+                <h2>Scopri <span class="text-gradient">AURA</span></h2>
+                <p>Esplora la nostra visione per una farmacovigilanza intelligente e accessibile a tutti.</p>
+            </div>
+
+            <div class="presentation-viewer" id="presentationViewer">
+                <!-- Loading State -->
+                <div class="presentation-loading" id="presentationLoading">
+                    <div class="presentation-spinner"></div>
+                    <span class="presentation-loading-text">Caricamento presentazione...</span>
+                </div>
+
+                <!-- Canvas Container -->
+                <div class="presentation-canvas-container">
+                    <canvas id="pdfCanvas"></canvas>
+                </div>
+
+                <!-- Side Navigation -->
+                <button class="presentation-nav-side prev" id="slidePrev" aria-label="Slide precedente">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <button class="presentation-nav-side next" id="slideNext" aria-label="Slide successiva">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+
+                <!-- Bottom Controls -->
+                <div class="presentation-controls">
+                    <button class="presentation-nav" id="slideNavPrev" aria-label="Precedente">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <span class="presentation-counter" id="slideCounter">1 / 1</span>
+                    <button class="presentation-nav" id="slideNavNext" aria-label="Successivo">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="presentation-progress" id="slideProgress" style="width: 0%;"></div>
+
+                <!-- Keyboard Hint -->
+                <div class="presentation-hint">
+                    <kbd>←</kbd> <kbd>→</kbd> per navigare
+                </div>
+
+                <!-- Fullscreen Button -->
+                <button class="presentation-fullscreen" id="presentationFullscreen" aria-label="Schermo intero">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -858,6 +927,179 @@
             currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
             updateCarousel();
         }, 5000);
+
+        // ===== PDF PRESENTATION VIEWER =====
+        (function initPDFViewer() {
+            // Set PDF.js worker source
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+            const pdfUrl = 'AURA-La-tua-salute-in-un-Click (1).pdf';
+            const canvas = document.getElementById('pdfCanvas');
+            const ctx = canvas.getContext('2d');
+            const loadingEl = document.getElementById('presentationLoading');
+            const counterEl = document.getElementById('slideCounter');
+            const progressEl = document.getElementById('slideProgress');
+            const viewerEl = document.getElementById('presentationViewer');
+
+            let pdfDoc = null;
+            let currentPage = 1;
+            let totalPages = 0;
+            let isRendering = false;
+
+            // Render a specific page
+            async function renderPage(pageNum) {
+                if (isRendering || !pdfDoc) return;
+                isRendering = true;
+                canvas.classList.add('loading');
+
+                try {
+                    const page = await pdfDoc.getPage(pageNum);
+
+                    // Calculate scale to fit container while maintaining aspect ratio
+                    const containerWidth = viewerEl.clientWidth;
+                    const containerHeight = viewerEl.clientHeight;
+                    const viewport = page.getViewport({ scale: 1 });
+
+                    const scaleX = containerWidth / viewport.width;
+                    const scaleY = containerHeight / viewport.height;
+                    const scale = Math.min(scaleX, scaleY) * 0.95; // 95% to add some padding
+
+                    const scaledViewport = page.getViewport({ scale });
+
+                    canvas.width = scaledViewport.width;
+                    canvas.height = scaledViewport.height;
+
+                    await page.render({
+                        canvasContext: ctx,
+                        viewport: scaledViewport
+                    }).promise;
+
+                    // Update UI
+                    counterEl.textContent = `${pageNum} / ${totalPages}`;
+                    progressEl.style.width = `${(pageNum / totalPages) * 100}%`;
+
+                    // Update navigation buttons
+                    updateNavButtons();
+
+                } catch (error) {
+                    console.error('Error rendering page:', error);
+                }
+
+                canvas.classList.remove('loading');
+                isRendering = false;
+            }
+
+            // Update navigation button states
+            function updateNavButtons() {
+                const prevBtns = [document.getElementById('slidePrev'), document.getElementById('slideNavPrev')];
+                const nextBtns = [document.getElementById('slideNext'), document.getElementById('slideNavNext')];
+
+                prevBtns.forEach(btn => {
+                    if (btn) btn.disabled = currentPage <= 1;
+                });
+                nextBtns.forEach(btn => {
+                    if (btn) btn.disabled = currentPage >= totalPages;
+                });
+            }
+
+            // Navigate to page
+            function goToPage(pageNum) {
+                if (pageNum < 1 || pageNum > totalPages || pageNum === currentPage) return;
+                currentPage = pageNum;
+                renderPage(currentPage);
+            }
+
+            // Navigation handlers
+            function prevPage() {
+                goToPage(currentPage - 1);
+            }
+
+            function nextPage() {
+                goToPage(currentPage + 1);
+            }
+
+            // Load PDF
+            async function loadPDF() {
+                try {
+                    pdfDoc = await pdfjsLib.getDocument(pdfUrl).promise;
+                    totalPages = pdfDoc.numPages;
+
+                    // Hide loading, show canvas
+                    loadingEl.style.display = 'none';
+
+                    // Render first page
+                    await renderPage(1);
+
+                } catch (error) {
+                    console.error('Error loading PDF:', error);
+                    loadingEl.innerHTML = `
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity: 0.5;">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 8v4M12 16h.01"/>
+                        </svg>
+                        <span class="presentation-loading-text">Presentazione non disponibile</span>
+                    `;
+                }
+            }
+
+            // Event listeners for navigation
+            document.getElementById('slidePrev')?.addEventListener('click', prevPage);
+            document.getElementById('slideNext')?.addEventListener('click', nextPage);
+            document.getElementById('slideNavPrev')?.addEventListener('click', prevPage);
+            document.getElementById('slideNavNext')?.addEventListener('click', nextPage);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                // Only handle if viewer is in viewport
+                const rect = viewerEl.getBoundingClientRect();
+                const isInView = rect.top < window.innerHeight && rect.bottom > 0;
+
+                if (isInView) {
+                    if (e.key === 'ArrowLeft') {
+                        prevPage();
+                        e.preventDefault();
+                    } else if (e.key === 'ArrowRight') {
+                        nextPage();
+                        e.preventDefault();
+                    }
+                }
+            });
+
+            // Fullscreen functionality
+            document.getElementById('presentationFullscreen')?.addEventListener('click', () => {
+                if (viewerEl.requestFullscreen) {
+                    viewerEl.requestFullscreen();
+                } else if (viewerEl.webkitRequestFullscreen) {
+                    viewerEl.webkitRequestFullscreen();
+                }
+            });
+
+            // Handle window resize
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    if (pdfDoc) {
+                        renderPage(currentPage);
+                    }
+                }, 200);
+            });
+
+            // Initialize when section is visible
+            const pdfObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !pdfDoc) {
+                        loadPDF();
+                        pdfObserver.disconnect();
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            const presentationSection = document.getElementById('presentazione');
+            if (presentationSection) {
+                pdfObserver.observe(presentationSection);
+            }
+        })();
     </script>
 </body>
 
